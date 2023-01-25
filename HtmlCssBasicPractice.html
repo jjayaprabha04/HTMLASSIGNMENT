@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HEAD TO TOE - One stop to know about your body</title>
+        <style>
+             @font-face
+            {
+                font-family: 'Prabha';
+                src: url(Font/FontsFree-Net-France.ttf);
+            }
+
+            *
+            {
+                background-color:#38aae8;
+            }
+           
+            #ALIST
+            {
+                display:inline-table;
+            }
+            h1:hover{
+                
+                text-shadow: 5px 5px 10px rgb(246, 21, 190);
+                color: #00a6ff;  
+                            
+            }
+        
+            h1{
+                margin: 0%;
+                border: 0in;
+                text-align: center;
+                box-shadow: 0px -2px 30px 9px aquamarine;
+                color: #00a6ff; 
+                text-shadow:5px 5px 10px red;     
+                background-color: #0873ad;           
+                font-family: 'Prabha';
+                font-size: 50px;         
+                
+                
+            }
+            h4{
+                
+                color: aquamarine;   
+                box-shadow: 10px 5px 10px aquamarine;
+                             
+            }
+            a{
+                
+                color: aquamarine;                  
+                             
+            }
+           
+            .OnListHover :hover
+            {
+                color: #ee556f;
+                
+            }        
+            a{
+                text-decoration:none;
+            }  
+            
+
+            
+            #Target_Window
+            {
+                border-width: 5px;
+                border-color: aquamarine;
+                border-radius: 10px;
+                border-style: double;  
+                box-shadow: 4px 5px 20px 9px aquamarine;
+     
+            }
+            #IndexPage
+            {
+                border-radius: 10px;
+                border-width: 5px;
+                border-color: aquamarine;
+                border-style: double;
+                box-shadow: 0px -2px 30px 9px aquamarine;
+            }
+            .container
+             {  margin: 5px;              
+                position: relative;
+                text-align: center;
+                background-color: aliceblue;
+                opacity: 0.6;
+                box-shadow: 0px -2px 30px 9px aquamarine;
+              }  
+              .centered
+               {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                } 
+                .top-left
+                 {
+                    position: absolute;
+                    top: 8px;
+                    left: 16px;
+                 }
+                                
+           
+        </style>
+    </head>
+    <body >   
+        <div class="container">     
+            <img src="IMG/BlueWave.jpeg" alt="" width="100%" height="150px">
+            <div class="centered"><h1>HEAD TO TOE</h1> </div>
+                
+        </div>    
+        <br>
+       
+        <table  width="100%">
+           
+            <tr> 
+                
+                <td width="30%" id="IndexPage">
+                    <ul>
+                        <li class="OnListHover">
+                            <h4>A</h4>
+                            
+                                <ul type="square">
+                                    <li><a href="Abdomen.html" target="targetwindow">ABDOMEN</a></li>
+                                    <li><a href="Ankle.html" target="targetwindow">Ankle</a></li>
+                                    <li><a href="Arm.html" target="targetwindow">Arm</a></li>
+                                </ul>
+                                                      
+                        </li>
+                        <li class="OnListHover">
+                            <h4>B</h4>
+                            <div id="BLIST">
+                                <ul type="square">
+                                    <li><a href="Brain.html" target="targetwindow">BRAIN</a></li>
+                                    <li><a href="Bone.html" target="targetwindow">BONE</a></li>
+                                    <li><a href="BloodVessel.html"target="targetwindow">BLOOD VESSELS</a></li>
+                                </ul>
+                            </div>  
+                        </li> 
+                    </ul>                         
+                </td>                 
+            
+                <td width="70%" align="center" id="Target_Window">
+                    <iframe src="IMG/HumanBody.jpg" name="targetwindow"frameborder="" width="800px" height="600px"></iframe>
+                </td>
+                
+            </tr>
+        </table>
+    
+    </body>
+</html>
